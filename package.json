@@ -1,0 +1,58 @@
+{
+  "name": "kakao-agent-cli",
+  "version": "0.1.0",
+  "description": "Cross-platform KakaoTalk CLI for AI agents with a file-based credential vault (no macOS Keychain).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "kakao-agent": "src/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/cli.mjs",
+    "./vault": "./src/vault.mjs",
+    "./client": "./src/client.mjs",
+    "./guard": "./src/guard.mjs",
+    "./paths": "./src/paths.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/cli.mjs && npm test"
+  },
+  "dependencies": {
+    "bson": "6.10.4"
+  },
+  "peerDependencies": {
+    "agent-messenger": "2.37.1"
+  },
+  "peerDependenciesMeta": {
+    "agent-messenger": {
+      "optional": true
+    }
+  },
+  "author": "Jiwon Park <park@jiwon.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiwonMe/kakao-agent-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiwonMe/kakao-agent-cli/issues"
+  },
+  "homepage": "https://github.com/jiwonMe/kakao-agent-cli#readme",
+  "keywords": [
+    "kakaotalk",
+    "kakao",
+    "cli",
+    "agent",
+    "messenger"
+  ]
+}
