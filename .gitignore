@@ -1,0 +1,12 @@
+node_modules/
+*.tgz
+.DS_Store
+.env*
+coverage/
+credentials.json
+*.preview.json
+*.reservation.json
+*.receipt.json
+provider-cache/
+message.txt
+*.verification.json
