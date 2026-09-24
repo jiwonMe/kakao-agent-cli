@@ -81,7 +81,7 @@ kakao-agent auth logout
 | OS | 경로 |
 |---|---|
 | Linux / macOS | `$XDG_CONFIG_HOME/kakao-agent-cli/credentials.json` (없으면 `~/.config/...`) |
-| Windows | `%APPDATA%\\kakao-agent-cli\\credentials.json` |
+| Windows | `%APPDATA%\kakao-agent-cli\credentials.json` |
 
 - 디렉터리 모드 `0700`, 파일 모드 `0600` (가능한 OS에서)
 - **Keychain / Credential Manager 사용 안 함** — 백업·동기화 폴더에 넣지 마세요
