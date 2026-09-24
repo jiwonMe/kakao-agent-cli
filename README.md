@@ -17,10 +17,10 @@
 |---|---|---|---|
 | OS | Linux, macOS, Windows | macOS 중심 (Keychain) | 플랫폼별 provider CLI |
 | 자격 증명 | `$XDG_CONFIG_HOME/.../credentials.json` (0600) / Windows `%APPDATA%` | macOS Keychain + envelope | agent-messenger 자체 저장 |
-| 목적 | 에이전트용 얊은 래퍼 + 파일 vault | Aside 연동·이미지 전송·정교한 guard | 범용 메신저 CLI |
+| 목적 | 에이전트용 얇은 래퍼 + 파일 vault | Aside 연동·이미지 전송·정교한 guard | 범용 메신저 CLI |
 | 라이선스 | 이 래퍼만 MIT | MIT (래퍼) | provider 별도 / 불명확 |
 
-`agent-kakaotalk`은 `agent-messenger`가 제공하는 실행 파일입니다. 이 패키지는 그 CLI를 대체하기보다, **파일 vault + preview/send 가드**를 에이전트에 맞게 얊게 감싱니다.
+`agent-kakaotalk`은 `agent-messenger`가 제공하는 실행 파일입니다. 이 패키지는 그 CLI를 대체하기보다, **파일 vault + preview/send 가드**를 에이전트에 맞게 얇게 감쌉니다.
 
 ## 요구 사항
 
@@ -107,7 +107,7 @@ kakao-agent auth logout
 
 - 비공식 접근 · ToS 위반 가능 · 계정 제재 위험
 - 테스트 전용 계정 사용
-- 로컬 파일 vault는 암호화된 OS Keychain이 아닔
+- 로컬 파일 vault는 암호화된 OS Keychain이 아님
 - `send`는 고수준 재시도 API를 쓰지 않고 세션에 1회만 WRITE
 
 ## 개발
